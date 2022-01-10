@@ -55,7 +55,7 @@ def detectObjectCoord(frame, outputs):
     return bboxes, probs, class_ids
 
 #Load video capture
-vid = cv2.VideoCapture('soccer-ball.mp4')
+vid = cv2.VideoCapture('demo_video.mp4')
 vid_w, vid_h = int(vid.get(3)), int(vid.get(4))
 #Write video
 out = cv2.VideoWriter('output/output.mp4', cv2.VideoWriter_fourcc(*'mp4v'),vid.get(cv2.CAP_PROP_FPS), (vid_w, vid_h))
