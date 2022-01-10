@@ -1,1 +1,3 @@
 # Football-Detection-Tracking
+
+I developed a function uses OpenCV to combine a YOLOv3 detector with a custom tracking system to identify and track a football in a video. Given that the YOLO detector has a processing rate of ~35 FPS, detection in successive frames is computationally intensive. Further the detection is oblivious to transitions between successive predictions, which can leader to failure due to problems of occlusion or change in appearance. Hence to monitor an object in a video, it is useful to develop a function that allevaites this issue by switching between object detection and tracking.
